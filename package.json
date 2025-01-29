@@ -1,0 +1,24 @@
+{
+  "name": "icr-job-aid",
+  "version": "1.0.0",
+  "description": "Comprehensive Job Aid for Interview",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisEkeDev/ICR-Job-Aid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisEkeDev/ICR-Job-Aid/issues"
+  },
+  "homepage": "https://github.com/ChrisEkeDev/ICR-Job-Aid#readme",
+  "devDependencies": {
+    "eslint": "^9.19.0",
+    "prettier": "3.4.2"
+  }
+}
