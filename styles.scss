@@ -52,6 +52,15 @@ header {
         white-space: nowrap;
         font-size: 18px;
         font-weight: 600;
+        margin: 0;
+
+        a {
+            color: $green;
+            text-decoration: none;
+            :visited {
+                color: $green;
+            }
+        }
     }
 
 }
@@ -62,6 +71,13 @@ main {
 
 #introduction {
     margin-top: 200px;
+}
+
+#getting-started,
+#everyday-apps,
+#daily-responsibilities,
+#being-successful {
+    padding: 100px 0;
 }
 
 h1 {
@@ -101,10 +117,14 @@ p {
 ul {
     margin-bottom: 36px;
     li {
-        font-size: 24px;
+        font-size: 18px;
         color: $black;
         margin-bottom: 10px;
     }
+}
+
+ul li::marker {
+    color: $gold; /* Change bullet color */
 }
 
 .app-icon {
@@ -120,7 +140,7 @@ ul {
     background-color: $grey;
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 20px;
     border: $border;
     gap: 20px;
@@ -129,6 +149,10 @@ ul {
     }
     .tip-body {
         font-size: 18px;
+        color: $green;
+        line-height: 1.2;
+        font-weight: 600;
+        margin: 0;
     }
 }
 
@@ -136,6 +160,12 @@ ul {
     color: $green;
     font-weight: 600;
 }
+
+.accent-gold {
+    color: $gold;
+    font-weight: 600;
+}
+
 
 .responsibilities-grid {
     display: grid;
@@ -184,6 +214,45 @@ ul {
     border-right: $border;
 }
 
-// #external-issues {
-//     border-right: $border;
-// }
+#conclusion {
+    padding-bottom: 200px;
+}
+
+.performance-wrapper {
+    background-color: $grey;
+    border: $border;
+    margin: 75px 0;
+    border-radius: 30px;
+    padding: 30px 50px;
+    p {
+        font-size: 18px
+    }
+}
+
+.performance-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-bottom: $border;
+    padding: 20px 0;
+    &:last-of-type {
+        border: none;
+    }
+}
+
+
+.help-wrapper {
+    background-color: $grey;
+    border: $border;
+    margin: 75px 0;
+    border-radius: 30px;
+    padding: 30px 50px;
+    p {
+        margin-top: 12px;
+        font-size: 18px;
+    }
+}
+
+#knowledge, #agents {
+    border-bottom: $border;
+}

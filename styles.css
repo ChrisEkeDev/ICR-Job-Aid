@@ -45,6 +45,14 @@ header {
   white-space: nowrap;
   font-size: 18px;
   font-weight: 600;
+  margin: 0;
+}
+.navigation-links li a {
+  color: #006937;
+  text-decoration: none;
+}
+.navigation-links li a :visited {
+  color: #006937;
 }
 
 main {
@@ -53,6 +61,13 @@ main {
 
 #introduction {
   margin-top: 200px;
+}
+
+#getting-started,
+#everyday-apps,
+#daily-responsibilities,
+#being-successful {
+  padding: 100px 0;
 }
 
 h1 {
@@ -93,9 +108,13 @@ ul {
   margin-bottom: 36px;
 }
 ul li {
-  font-size: 24px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 10px;
+}
+
+ul li::marker {
+  color: #EBA900; /* Change bullet color */
 }
 
 .app-icon {
@@ -111,7 +130,7 @@ ul li {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border-radius: 20px;
   border: 1px solid #e3e3e3;
   gap: 20px;
@@ -121,10 +140,19 @@ ul li {
 }
 .tip-wrapper .tip-body {
   font-size: 18px;
+  color: #006937;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0;
 }
 
 .accent {
   color: #006937;
+  font-weight: 600;
+}
+
+.accent-gold {
+  color: #EBA900;
   font-weight: 600;
 }
 
@@ -173,6 +201,48 @@ ul li {
 
 #account-issues {
   border-right: 1px solid #e3e3e3;
+}
+
+#conclusion {
+  padding-bottom: 200px;
+}
+
+.performance-wrapper {
+  background-color: #f6f6f6;
+  border: 1px solid #e3e3e3;
+  margin: 75px 0;
+  border-radius: 30px;
+  padding: 30px 50px;
+}
+.performance-wrapper p {
+  font-size: 18px;
+}
+
+.performance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 20px 0;
+}
+.performance-item:last-of-type {
+  border: none;
+}
+
+.help-wrapper {
+  background-color: #f6f6f6;
+  border: 1px solid #e3e3e3;
+  margin: 75px 0;
+  border-radius: 30px;
+  padding: 30px 50px;
+}
+.help-wrapper p {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+#knowledge, #agents {
+  border-bottom: 1px solid #e3e3e3;
 }
 
 /*# sourceMappingURL=styles.css.map */
